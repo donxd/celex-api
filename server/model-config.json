@@ -50,5 +50,9 @@
   "Teachers": {
     "dataSource": "db",
     "public": true
+  },
+  "Groups": {
+    "dataSource": "db",
+    "public": true
   }
 }

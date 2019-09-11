@@ -1,0 +1,47 @@
+{
+  "name": "Groups",
+  "plural": "groups",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idGroup": {
+      "type": "number",
+      "required": true
+    },
+    "schedule": {
+      "type": "string",
+      "required": true
+    },
+    "publication": {
+      "type": "date",
+      "required": true
+    },
+    "bimester": {
+      "type": "string",
+      "required": true
+    },
+    "classroom": {
+      "type": "string",
+      "required": true
+    },
+    "idCourse": {
+      "type": "number",
+      "required": true
+    },
+    "idGrade": {
+      "type": "number",
+      "required": true
+    },
+    "idTeacher": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
