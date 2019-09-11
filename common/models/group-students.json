@@ -1,0 +1,23 @@
+{
+  "name": "GroupStudents",
+  "plural": "groupstudents",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idGroup": {
+      "type": "number",
+      "required": true
+    },
+    "idStudent": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

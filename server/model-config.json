@@ -54,5 +54,9 @@
   "Groups": {
     "dataSource": "db",
     "public": true
+  },
+  "GroupStudents": {
+    "dataSource": "db",
+    "public": true
   }
 }
