@@ -4,15 +4,25 @@
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
+    "mysql": {
+      "table": "courses"
+    },
     "validateUpsert": true
   },
   "properties": {
     "idCourse": {
       "type": "number",
+      "id": true,
+      "mysql": {
+        "columnName": "id_course"
+      },
       "required": true
     },
     "name": {
       "type": "string",
+      "mysql": {
+        "columnName": "name"
+      },
       "required": true
     }
   },
