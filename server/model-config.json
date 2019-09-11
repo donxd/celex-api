@@ -42,5 +42,9 @@
   "Grades": {
     "dataSource": "db",
     "public": true
+  },
+  "Students": {
+    "dataSource": "db",
+    "public": true
   }
 }
