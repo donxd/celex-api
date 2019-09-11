@@ -38,5 +38,9 @@
   "Courses": {
     "dataSource": "db",
     "public": true
+  },
+  "Grades": {
+    "dataSource": "db",
+    "public": true
   }
 }
