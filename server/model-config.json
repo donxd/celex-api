@@ -46,5 +46,9 @@
   "Students": {
     "dataSource": "db",
     "public": true
+  },
+  "Teachers": {
+    "dataSource": "db",
+    "public": true
   }
 }
