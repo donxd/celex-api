@@ -24,5 +24,5 @@ Filter to get complete elements:
 
 
 `
-{"include": ["course"]}
+{"include":["course","grade"]}
 `

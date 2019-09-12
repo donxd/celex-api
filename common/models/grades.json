@@ -12,6 +12,7 @@
   "properties": {
     "idGrade": {
       "type": "number",
+      "id": true,
       "mysql": {
         "columnName": "id_grade"
       },
