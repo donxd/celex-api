@@ -57,7 +57,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "course" : {
+      "type": "belongsTo",
+      "model": "Courses",
+      "foreignKey": "id_course"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -12,6 +12,7 @@
   "properties": {
     "idCourse": {
       "type": "number",
+      "id": true,
       "mysql": {
         "columnName": "id_course"
       },
