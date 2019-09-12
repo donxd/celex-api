@@ -12,6 +12,11 @@ Endpoint to check API elements:
 /explorer
 `
 
+## Options
+
+`DEBUG=loopback:connector:mysql`
+`DEBUG=loopback:datasource`
+
 ## Groups
 
 Endpoint to show groups:
@@ -24,5 +29,5 @@ Filter to get complete elements:
 
 
 `
-{"include":["course","grade","teacher"]}
+{"include":["course","grade","teacher","students"],"limit":10}
 `

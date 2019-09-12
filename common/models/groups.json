@@ -13,6 +13,7 @@
   "properties": {
     "idGroup": {
       "type": "number",
+      "id": true,
       "mysql": {
         "columnName": "id_group"
       },
@@ -72,6 +73,13 @@
       "type": "belongsTo",
       "model": "Teachers",
       "foreignKey": "id_teacher"
+    },
+    "students": {
+      "type": "hasMany",
+      "model": "Students",
+      "keyThrough": "idStudent",
+      "foreignKey": "idGroup",
+      "through": "GroupStudents"
     }
   },
   "acls": [],
