@@ -13,6 +13,7 @@
   "properties": {
     "idTeacher": {
       "type": "number",
+      "id": true,
       "mysql": {
         "columnName": "id_teacher"
       },

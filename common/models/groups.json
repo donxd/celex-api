@@ -67,6 +67,11 @@
       "type": "belongsTo",
       "model": "Grades",
       "foreignKey": "id_grade"
+    },
+    "teacher" : {
+      "type": "belongsTo",
+      "model": "Teachers",
+      "foreignKey": "id_teacher"
     }
   },
   "acls": [],
