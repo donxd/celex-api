@@ -2,17 +2,16 @@
   "name": "Courses",
   "plural": "courses",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
+  "excludeBaseProperties": ["id"],
   "options": {
     "mysql": {
       "table": "courses"
-    },
-    "validateUpsert": true
+    }
   },
   "properties": {
     "idCourse": {
       "type": "number",
-      "id": true,
       "mysql": {
         "columnName": "id_course"
       },

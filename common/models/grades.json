@@ -2,13 +2,19 @@
   "name": "Grades",
   "plural": "grades",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
+  "excludeBaseProperties": ["id"],
   "options": {
-    "validateUpsert": true
+    "mysql": {
+      "table": "grades"
+    }
   },
   "properties": {
     "idGrade": {
       "type": "number",
+      "mysql": {
+        "columnName": "id_grade"
+      },
       "required": true
     },
     "name": {

@@ -2,13 +2,20 @@
   "name": "Teachers",
   "plural": "teachers",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
+  "excludeBaseProperties": ["id"],
   "options": {
+    "mysql": {
+      "table": "teachers"
+    },
     "validateUpsert": true
   },
   "properties": {
     "idTeacher": {
       "type": "number",
+      "mysql": {
+        "columnName": "id_teacher"
+      },
       "required": true
     },
     "name": {

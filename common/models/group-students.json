@@ -2,17 +2,27 @@
   "name": "GroupStudents",
   "plural": "groupstudents",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
+  "excludeBaseProperties": ["id"],
   "options": {
+    "mysql": {
+      "tableName": "group_student"
+    },
     "validateUpsert": true
   },
   "properties": {
     "idGroup": {
       "type": "number",
+      "mysql": {
+        "columnName": "id_group"
+      },
       "required": true
     },
     "idStudent": {
       "type": "number",
+      "mysql": {
+        "columnName": "id_student"
+      },
       "required": true
     }
   },

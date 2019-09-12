@@ -2,13 +2,20 @@
   "name": "Students",
   "plural": "students",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
+  "excludeBaseProperties": ["id"],
   "options": {
+    "mysql": {
+      "table": "students"
+    },
     "validateUpsert": true
   },
   "properties": {
     "idStudent": {
       "type": "number",
+      "mysql": {
+        "columnName": "id_student"
+      },
       "required": true
     },
     "name": {

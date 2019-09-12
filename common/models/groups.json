@@ -2,13 +2,20 @@
   "name": "Groups",
   "plural": "groups",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
+  "excludeBaseProperties": ["id"],
   "options": {
+    "mysql": {
+      "table": "groups"
+    },
     "validateUpsert": true
   },
   "properties": {
     "idGroup": {
       "type": "number",
+      "mysql": {
+        "columnName": "id_group"
+      },
       "required": true
     },
     "schedule": {
@@ -29,14 +36,23 @@
     },
     "idCourse": {
       "type": "number",
+      "mysql": {
+        "columnName": "id_course"
+      },
       "required": true
     },
     "idGrade": {
       "type": "number",
+      "mysql": {
+        "columnName": "id_grade"
+      },
       "required": true
     },
     "idTeacher": {
       "type": "number",
+      "mysql": {
+        "columnName": "id_teacher"
+      },
       "required": true
     }
   },
