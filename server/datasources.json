@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "celex-db": {
+    "host": "172.17.0.2",
+    "port": 3306,
+    "url": "mysql://root:pruebas@172.17.0.2/celex",
+    "database": "celex",
+    "password": "pruebas",
+    "name": "celex-db",
+    "user": "root",
+    "connector": "mysql"
   }
 }

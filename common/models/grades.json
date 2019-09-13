@@ -1,0 +1,30 @@
+{
+  "name": "Grades",
+  "plural": "grades",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "excludeBaseProperties": ["id"],
+  "options": {
+    "mysql": {
+      "table": "grades"
+    }
+  },
+  "properties": {
+    "idGrade": {
+      "type": "number",
+      "id": true,
+      "mysql": {
+        "columnName": "id_grade"
+      },
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

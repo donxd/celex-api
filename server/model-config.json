@@ -34,5 +34,29 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Courses": {
+    "dataSource": "celex-db",
+    "public": true
+  },
+  "Grades": {
+    "dataSource": "celex-db",
+    "public": true
+  },
+  "Students": {
+    "dataSource": "celex-db",
+    "public": true
+  },
+  "Teachers": {
+    "dataSource": "celex-db",
+    "public": true
+  },
+  "Groups": {
+    "dataSource": "celex-db",
+    "public": true
+  },
+  "GroupStudents": {
+    "dataSource": "celex-db",
+    "public": true
   }
 }

@@ -1,0 +1,87 @@
+{
+  "name": "Groups",
+  "plural": "groups",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "excludeBaseProperties": ["id"],
+  "options": {
+    "mysql": {
+      "table": "groups"
+    },
+    "validateUpsert": true
+  },
+  "properties": {
+    "idGroup": {
+      "type": "number",
+      "id": true,
+      "mysql": {
+        "columnName": "id_group"
+      },
+      "required": true
+    },
+    "schedule": {
+      "type": "string",
+      "required": true
+    },
+    "publication": {
+      "type": "date",
+      "required": true
+    },
+    "bimester": {
+      "type": "string",
+      "required": true
+    },
+    "classroom": {
+      "type": "string",
+      "required": true
+    },
+    "idCourse": {
+      "type": "number",
+      "mysql": {
+        "columnName": "id_course"
+      },
+      "required": true
+    },
+    "idGrade": {
+      "type": "number",
+      "mysql": {
+        "columnName": "id_grade"
+      },
+      "required": true
+    },
+    "idTeacher": {
+      "type": "number",
+      "mysql": {
+        "columnName": "id_teacher"
+      },
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "course" : {
+      "type": "belongsTo",
+      "model": "Courses",
+      "foreignKey": "id_course"
+    },
+    "grade" : {
+      "type": "belongsTo",
+      "model": "Grades",
+      "foreignKey": "id_grade"
+    },
+    "teacher" : {
+      "type": "belongsTo",
+      "model": "Teachers",
+      "foreignKey": "id_teacher"
+    },
+    "students": {
+      "type": "hasMany",
+      "model": "Students",
+      "keyThrough": "idStudent",
+      "foreignKey": "idGroup",
+      "through": "GroupStudents"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Courses",
+  "plural": "courses",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "excludeBaseProperties": ["id"],
+  "options": {
+    "mysql": {
+      "table": "courses"
+    }
+  },
+  "properties": {
+    "idCourse": {
+      "type": "number",
+      "id": true,
+      "mysql": {
+        "columnName": "id_course"
+      },
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "mysql": {
+        "columnName": "name"
+      },
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
